@@ -1,0 +1,237 @@
+body {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 30px;
+    margin: 0; 
+    background-color: #fdf2f1;
+    overflow-x: hidden;
+}
+
+p {font-size: 18px;}
+
+footer {
+    grid-template-columns: repeat(3, auto); 
+    grid-template-rows: auto;
+    padding: 10px 40px;
+}
+
+.front {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('images/front_view_shop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease;
+}
+
+.front::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.29), transparent);
+    z-index: 1;
+}
+
+.mainpg_title {
+    position: relative;
+    margin: auto;
+    top: -20px; 
+    padding-left: 40px;
+    font-size: clamp(70px, 20vw, 150px);
+    z-index: 50;
+    color: white; 
+}
+
+#navbar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    z-index: 1;
+}
+
+.navlinks {
+    display: flex;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+.navlinks a {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navlinks a:hover {
+    color: #e16262;
+}
+
+.navlogo {
+    padding-left: 20px; 
+    max-height: 100px;
+    object-fit: contain;
+}
+
+@media (max-width: 450px) {
+    .mainpg_title {padding-left: 20px;}
+    
+    .navlinks {
+        padding-right: 40px; 
+        gap: 10px; 
+    }
+
+    .navlogo {padding-left: 0;}
+}
+
+.quick_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "img1 abt_info"
+        "work_hours img2"; 
+    gap: 5vw; 
+    padding: 80px 120px 40px; 
+    text-align: center;
+}
+
+.quick_info .img1 {grid-area: img1;}
+
+.quick_info .abt_info {grid-area: abt_info;}
+
+.quick_info .work_hours {grid-area: work_hours;}
+
+.quick_info .img2 {grid-area: img2;}
+
+.quick_info .img1, .quick_info .img2 {
+    display: flex;
+    align-items: center;
+    max-height: 600px;
+    padding: 20px; 
+}
+
+.quick_info img {
+    width: 100%;
+    height: auto;
+}
+
+.quick_info h1 {color: #24314c;}
+
+.button { 
+    background-color: #24314c;  
+    border-radius: 18px; 
+    color: white; 
+    padding: 7px 20px; 
+    text-align: center; 
+    text-decoration: none;  
+    font-size: 18px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {background-color: #090d15;}
+
+.services {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.services .s_abt {
+    position: relative;
+    grid-column: 1 / -1;
+    padding: 10px 120px 20px 120px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.services .s_abt::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background-image: url('images/pink_flowers.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.services .text div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    text-decoration: none; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.services .text div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.services .text div span {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.services a { text-decoration: none; }
+
+.services .text div:hover {
+    background-color: rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 950px) {
+    .quick_info {
+        grid-template-areas:
+            "img1"
+            "abt_info"
+            "img2"
+            "work_hours";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .services {
+        grid-template-areas:
+            "s_abt"
+            "mani"
+            "pedi"
+            "addons"
+            "wax";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(4, 200px);
+    }
+
+    .mani img, .pedi img, .addons img, .wax img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .services>div.s_abt {
+        padding: 10px 50px;
+    }
+}
