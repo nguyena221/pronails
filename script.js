@@ -52,4 +52,5 @@ if (window.location.pathname.endsWith('index.html')) {
 
     // Initial background setup
     changeBackground();
+    
 }
