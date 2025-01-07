@@ -4,36 +4,25 @@
     transition: background-image 1s ease;
 }
 
-.quick_info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5vw; 
-    padding: 80px 120px 40px;
-    text-align: center;
-}
-
-.quick_info > div {
-    position: relative;
-}
-
-.quick_info .img1, .quick_info .img2 {
+.container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 70px;
+    padding: 60px 200px;
 }
 
-.quick_info img {
-    max-width: 85%;
-    max-height: 600px; 
-    object-fit: cover;
+.responsive-img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 20px;
 }
 
-.quick_info .abt_info h1, .quick_info .work_hours h1 {color: #24314c;}
+.info {
+    flex: 1;
+    max-width: 70%;
+}
 
-.quick_info .abt_info p, .quick_info .work_hours p {margin: 20px 0;}
-
-.quick_info .button {
+.container .button {
     display: inline-block;
     background-color: #24314c;
     color: white;
@@ -45,7 +34,7 @@
     transition: background-color 0.3s ease;
 }
 
-.quick_info .button:hover {background-color: #090d15;}
+.container .button:hover {background-color: #090d15;}
 
 .services {
     display: grid;
@@ -110,32 +99,18 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-@media screen and (max-width: 950px) {
-    .quick_info {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        padding: 100px 120px 100px; 
+@media screen and (max-width: 1150px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px; 
+        padding: 1em 0; 
     }
 
-    .quick_info > div {order: 0; }
+    .responsive-img {width: 100%;}
+}
 
-    .quick_info .img2 {order: 2; }
-
-    .quick_info .work_hours {order: 3; }
-
-    .quick_info .img1 {order: 1;}
-
-    .quick_info .abt_info {order: 2; }
-
-    .quick_info img {
-        max-width: 70%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-
-
+@media screen and (max-width: 950px) {    
     .services {
         grid-template-areas:
             "s_abt"
@@ -154,7 +129,5 @@
         height: 100%;
     }
 
-    .services>div.s_abt {
-        padding: 10px 50px;
-    }
+    .services>div.s_abt {padding: 10px 50px;}
 }
