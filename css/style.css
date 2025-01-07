@@ -14,6 +14,25 @@ footer {
     padding: 10px 40px;
 }
 
+.front {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.29), transparent);
+    z-index: 1;
+}
+
 .mainpg_title {
     position: relative;
     margin: auto;
@@ -68,248 +87,3 @@ footer {
 
     .navlogo {padding-left: 0;}
 }
-
-/*
-.quick_info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 5vw; 
-    padding: 80px 120px 40px;
-    text-align: center;
-}
-
-.quick_info > div {
-    position: relative;
-}
-
-.quick_info .img1, .quick_info .img2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.quick_info img {
-    max-width: 100%;
-    height: auto; 
-    object-fit: cover;
-}
-
-.quick_info .abt_info, .quick_info .work_hours {
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.quick_info .abt_info h1, .quick_info .work_hours h1 {
-    color: #24314c;
-}
-
-.quick_info .abt_info p, .quick_info .work_hours p {
-    margin: 5px 0;
-}
-
-.quick_info .button {
-    display: inline-block;
-    background-color: #24314c;
-    color: white;
-    padding: 7px 20px;
-    text-decoration: none;
-    border-radius: 18px;
-    font-size: 18px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-}
-
-.quick_info .button:hover {
-    background-color: #090d15;
-}
-
-@media screen and (max-width: 950px) {
-    .quick_info {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        padding: 40px 120px 10px; 
-    }
-
-    .quick_info > div {
-        padding-top: 20px;
-        order: 0; 
-    }
-
-    .quick_info .img2 {
-        order: 2;
-    }
-
-    .quick_info .work_hours {
-        padding-top: 0; 
-        order: 3;
-    }
-
-    .quick_info .img1 {
-        order: 1;
-    }
-
-    .quick_info .abt_info {
-        order: 2;
-    }
-
-    .quick_info img {
-        max-width: 80%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-    }
-}
-
-/*
-.quick_info {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "img1 abt_info"
-        "work_hours img2"; 
-    gap: 5vw; 
-    padding: 80px 120px 40px; 
-    text-align: center;
-}
-
-.quick_info .img1 {grid-area: img1;}
-
-.quick_info .abt_info {grid-area: abt_info;}
-
-.quick_info .work_hours {grid-area: work_hours;}
-
-.quick_info .img2 {grid-area: img2;}
-
-.quick_info .img1, .quick_info .img2 {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    max-height: 600px;
-    padding: 20px; 
-}
-
-.quick_info img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; 
-}
-
-.quick_info h1 {color: #24314c;}
-
-.button { 
-    background-color: #24314c;  
-    border-radius: 18px; 
-    color: white; 
-    padding: 7px 20px; 
-    text-align: center; 
-    text-decoration: none;  
-    font-size: 18px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {background-color: #090d15;}
-
-
-.services {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr); 
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.services .s_abt {
-    position: relative;
-    grid-column: 1 / -1;
-    padding: 10px 120px 20px 120px;
-    color: #ffffff;
-    overflow: hidden;
-}
-
-.services .s_abt::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    background-image: url('../images/pink_flowers.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
-}
-
-.services .text div {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    text-decoration: none; 
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.15);
-}
-
-.services .text div img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.services .text div span {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    z-index: 1;
-}
-
-.services a { text-decoration: none; }
-
-.services .text div:hover {
-    background-color: rgba(0, 0, 0, 0.3); 
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-@media (max-width: 950px) {
-    /*
-    .quick_info {
-        grid-template-areas:
-            "img1"
-            "abt_info"
-            "img2"
-            "work_hours";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto
-        padding: 100px; 
-    }
-
-
-    .services {
-        grid-template-areas:
-            "s_abt"
-            "mani"
-            "pedi"
-            "addons"
-            "wax";
-        grid-template-columns: 1fr;
-        grid-template-rows: auto repeat(4, 200px);
-    }
-
-    .mani img, .pedi img, .addons img, .wax img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    .services>div.s_abt {
-        padding: 10px 50px;
-    }
-}
-*/
