@@ -18,7 +18,7 @@ footer {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background-image: url('images/front_view_shop.jpg');
+    background-image: url('./images/front_view_shop.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -234,6 +234,7 @@ footer {
 }
 
 .button:hover {background-color: #090d15;}
+*/
 
 .services {
     display: grid;
@@ -299,6 +300,7 @@ footer {
 }
 
 @media (max-width: 950px) {
+    /*
     .quick_info {
         grid-template-areas:
             "img1"
@@ -309,6 +311,7 @@ footer {
         grid-template-rows: auto
         padding: 100px; 
     }
+    */
 
     .services {
         grid-template-areas:
@@ -331,4 +334,3 @@ footer {
         padding: 10px 50px;
     }
 }
-*/
