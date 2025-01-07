@@ -257,7 +257,7 @@ footer {
     left: -20px;
     width: calc(100% + 40px);
     height: calc(100% + 40px);
-    background-image: url('images/pink_flowers.jpg');
+    background-image: url('../images/pink_flowers.jpg');
     background-size: cover;
     background-position: center;
     filter: blur(5px);
