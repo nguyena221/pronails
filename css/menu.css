@@ -3,19 +3,28 @@
   background-image: url('../images/nails/uv_light.jpg');
 }
 
-.section_title {
-  display: inline-block;
-  margin-bottom: 0; 
-}
-
-.section_title span {
-  font-size: 1.5rem;
+.more_info {
+  padding: 1.5em;
+  text-align: center;
+  background-color: #24314c;
+  font-size: 15px; 
+  color: white;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5em;
+  color: #24314c;
+}
+
+.section_title {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.section_title span {
+  font-size: 1.5rem;
 }
 
 .menu {
@@ -25,7 +34,7 @@
 
 .menu-group-heading {
   margin: 0;
-  padding-top: 1em; 
+  padding-top: 1em;
   padding-bottom: 1em;
   border-bottom: 2px solid #ccc;
 }
@@ -41,14 +50,6 @@
   display: flex;
 }
 
-.menu-item-image {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  object-fit: cover;
-  margin-right: 1.5em;
-}
-
 .menu-item-text {
   flex-grow: 1;
 }
@@ -57,7 +58,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .menu-item-name {
@@ -66,9 +67,25 @@
 
 .menu-item-description {
   line-height: 1.6;
-  font-weight: 200; 
-  margin: 5px 0; 
+  font-weight: 200;
+  margin: 5px 0;
 }
+
+.lavender, .mango, .orange, .mint, .coffee, .jasmine {
+  font-weight: bold;
+}
+
+.lavender {color: purple;}
+
+.mango {color: gray;}
+
+.orange {color:darkorange;}
+
+.mint {color: green; }
+
+.coffee {color: brown;}
+
+.jasmine {color: blue;}
 
 @media screen and (min-width: 950px) {
   .menu {
@@ -77,10 +94,5 @@
 
   .menu-group {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .menu-item-image {
-    width: 125px;
-    height: 125px;
   }
 }

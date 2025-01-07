@@ -50,7 +50,7 @@
 .services {
     display: grid;
     grid-template-rows: repeat(2, 1fr); 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .services .s_abt {
@@ -141,13 +141,14 @@
             "s_abt"
             "mani"
             "pedi"
+            "combo"
             "addons"
             "wax";
         grid-template-columns: 1fr;
-        grid-template-rows: auto repeat(4, 200px);
+        grid-template-rows: auto repeat(5, 200px);
     }
 
-    .mani img, .pedi img, .addons img, .wax img {
+    .mani img, .pedi img, .combo img .addons img, .wax img {
         object-fit: cover;
         width: 100%;
         height: 100%;
