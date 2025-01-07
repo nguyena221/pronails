@@ -11,6 +11,7 @@ if (window.location.pathname.endsWith('index.html')) {
         'images/nails/green_flake_nails.jpg',
         'images/nails/pink_nails.jpg',
         'images/nails/grad_christmas.jpeg',
+        'images/nail_polish.jpg',
         'images/nails/neongreen_xmas.jpg',
         'images/nails/peppermint_nails.jpg',
         'images/nails/pink_xmas_nails.jpg',
