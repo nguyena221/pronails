@@ -8,15 +8,14 @@
 
 .contact-info {
     width: 30%;
-    padding: 40px;
-    margin-left: 150px;
+    padding: 4em;
     text-align: left;
     font-size: 18px;
 }
 .contact-us-line{
     font-size: 50px;
     font-weight: bolder;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 .phone-address-lable{
     font-size: 30px;
