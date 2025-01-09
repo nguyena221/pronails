@@ -5,26 +5,44 @@
     background-attachment: fixed;
     background-position: bottom center;
 }
+
 .contact-info {
-    background-color: #E3C3C1;
-    width: 15%;
-    border: 10px solid #0e1627;
+    width: 30%;
     padding: 40px;
-    /* margin-left: 400px;
-    margin-top: 30px; */
-    text-align: center;
+    margin-left: 150px;
+    text-align: left;
+    font-size: 18px;
 }
-.map-embeded-info{
-    text-align: center;
+.contact-us-line{
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0px 0px 0px 0px;
 }
+.phone-address-lable{
+    font-size: 30px;
+}
+
+.map-embeded-info {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 300px; /* Adjust this to your desired div height */
+    width: 33%;
+    border: 3px solid #24314c; /* Optional: to visualize the div */
+    margin: 10px;
+    margin-left: 150px;
+}
+
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 iframe{
-    width: 600px;
-    height: 300px;
+    width: 20em;
+    height: 9em;
 }
+
 body {
     font-family: "Kantumruy Pro", sans-serif;
     font-size: 30px;
