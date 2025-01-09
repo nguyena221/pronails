@@ -7,7 +7,7 @@
 }
 
 .contact-info {
-    width: 30%;
+    width: auto;
     padding: 4em;
     text-align: left;
     font-size: 18px;
@@ -17,7 +17,7 @@
     font-weight: bolder;
     margin: 0;
 }
-.phone-address-lable{
+.phone-address-label{
     font-size: 30px;
 }
 
@@ -29,7 +29,7 @@
     width: 33%;
     border: 3px solid #24314c; /* Optional: to visualize the div */
     margin: 10px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 
 .container{
