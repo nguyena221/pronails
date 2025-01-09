@@ -52,9 +52,10 @@ p {font-size: 1.2vw; }
 
 .container:nth-of-type(7) .responsive-img {max-width: 25%;}
 
-.container:nth-last-of-type(2), .container:nth-last-of-type(3), .container:nth-last-of-type(4) {
-    padding-top: 0.5em; 
-    padding-bottom: 0.3em;
+.container:nth-of-type(2), .container:nth-last-of-type(3), .container:nth-last-of-type(4) {
+    padding-top: 0; 
+    padding-bottom: 0;
+    margin: 0;
     border-bottom: none;
 }
 
@@ -72,7 +73,7 @@ p {font-size: 1.2vw; }
     text-align: center;
     background-color: #24314c;
     color: white;
-    margin-top: 2em;
+    margin: 2em 0;
     padding: 10px;
     text-decoration: none;
     border-radius: 18px;
