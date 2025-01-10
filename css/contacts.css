@@ -11,42 +11,32 @@
     padding: 4em;
     text-align: left;
     font-size: 18px;
-    margin-left: 60px;
-
 }
 .friendly-thing{
     font-style: italic;
 }
 .contact-us-line{
-    font-size: 50px;
+    font-size: 200%;
     font-weight: bolder;
     margin: 0;
 }
 .phone-address-label{
-    font-size: 30px;
+    font-size: 100%;
+    font-weight:400;
 }
-
 .map-embeded-info {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 300px; /* Adjust this to your desired div height */
-    width: 33%;
-    border: 3px solid #24314c; /* Optional: to visualize the div */
-    margin: 10px;
-    margin-left: 120px;
-}
-.contact-tab-picture{
-    width: 400px;
-    height: 400px;
-}
-.container{
-    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    border: 2px solid #bd8e89;
+    margin-bottom: 3em;
 }
 
 iframe{
-    width: 20em;
-    height: 9em;
+    width: 24em;
+    height: 9.5em;
 }
 
 body {
@@ -55,4 +45,72 @@ body {
     margin: 0; 
     background-color: #fdf2f1;
     overflow-x: hidden;
+}
+h3{
+    margin-top: 0.8em;
+}
+.container {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    margin: 0;
+    color: #bd8e89;
+    padding: 2.5em 7em 0em; 
+    gap: 0em;
+    /* border-bottom: 2px solid #bd8e89; */
+}
+
+
+
+.responsive-img { 
+    max-height: 100%;
+    max-width: 30%;
+    align-self: center;
+    border: 2px solid #bd8e89;
+    padding: 10px;
+}
+
+.info {
+    flex: 1;
+    height: 100%;
+    width: 0%;
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column;
+}
+
+/* @media (max-width: 1000px) {
+    .container {
+        flex-direction: column; 
+        gap: 0; 
+        padding-top: 0;
+    }
+    .container:nth-of-type(2) .responsive-img{ max-width: 100%; }
+    p {font-size: 18px; }
+
+}  */
+
+@media (max-width: 1300px) {
+    .container {
+        flex-direction: column; /* Switch to column layout */
+        padding: 4em; /* Adjust padding for smaller screens */
+    }
+
+    .responsive-img, 
+    .info {
+        width: 100%; /* Take full width */
+        margin: 0 auto; /* Center items */
+        max-width: 100%; /* Prevent oversized content */
+    }
+    .responsive-img{
+        width: 60%;
+        margin-top: 3em;
+    }
+
+    .map-embeded-info, 
+    iframe {
+        width: 100%; /* Make the iframe responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
