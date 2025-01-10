@@ -11,6 +11,11 @@
     padding: 4em;
     text-align: left;
     font-size: 18px;
+    margin-left: 60px;
+
+}
+.friendly-thing{
+    font-style: italic;
 }
 .contact-us-line{
     font-size: 50px;
@@ -29,11 +34,13 @@
     width: 33%;
     border: 3px solid #24314c; /* Optional: to visualize the div */
     margin: 10px;
-    margin-left: 100px;
+    margin-left: 120px;
 }
-
+.contact-tab-picture{
+    width: 400px;
+    height: 400px;
+}
 .container{
-    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
