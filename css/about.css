@@ -4,13 +4,6 @@ p {font-size: 1.2vw; }
     height: auto;
     background-image: url('../images/about.jpg');
 }
-
-.container {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
-    gap: 20px;
-}
  
 .container {
     display: flex;
