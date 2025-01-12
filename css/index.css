@@ -1,7 +1,7 @@
 .front {
     height: 100vh;
     background-image: url('../images/front_view_shop.jpg');
-    transition: background-image 1s ease;
+    transition: background-image 1s ease; 
 }
 
 .container {
@@ -21,6 +21,10 @@
 .info {
     flex: 1;
     max-width: 70%;
+}
+
+.info h1 {
+    color: #24314c; 
 }
 
 .container .button {
