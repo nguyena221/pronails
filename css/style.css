@@ -8,12 +8,6 @@ body {
 
 p {font-size: 18px;}
 
-footer {
-    grid-template-columns: repeat(3, auto); 
-    grid-template-rows: auto;
-    padding: 10px 40px;
-}
-
 .front {
     position: relative;
     overflow: hidden;

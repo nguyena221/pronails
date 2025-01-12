@@ -9,14 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="script.js" defer></script>
     <title>Pro Nails</title>
 </head>
 
 <body>
-    <div class="front">
+    <!-- this is the header and navigation bar -->
+    <header class="front">
         <div id="navbar">
             <a href="index.html">
                 <img class="navlogo" src="images/logo.png" alt="Logo">
@@ -29,8 +32,9 @@
             </nav>
         </div>
         <h1 class="mainpg_title">Pro Nails</h1>
-    </div>
+    </header>
 
+    <!-- these two containers give quick information about Pro Nails (brief about & work hours) -->
     <div class="container">
         <img src="images/nails/tree_nails.jpeg" alt="tree_nails" class="responsive-img">
         <div class="info">
@@ -58,11 +62,13 @@
             <p><b>Thursday:</b> 10:00 AM - 7:00 PM</p>
             <p><b>Friday:</b> 10:00 AM - 7:00 PM</p>
             <p><b>Saturday:</b> 10:00 AM - 7:00 PM</p>
-            <p><b>Our work hours vary depending on the month (due to daylights-saving). Please visit our "About" page to see when our work 
-                hours are at a certain month or call us to ask! Thank you!</p>
+            <p><b>Our work hours vary depending on the month (due to daylights-saving). Please visit our "About" page to
+                    see when our work
+                    hours are at a certain month or call us to ask! Thank you!</p>
         </div>
     </div>
 
+    <!-- section contains links to the services provided at Pro Nails (links lead to menu.html) -->
     <div class=services>
         <div class="s_abt">
             <h1>Our Services</h1>
@@ -102,6 +108,58 @@
             </div>
         </a>
     </div>
+
+    <footer>
+        <div class="row primary">
+            <div class="column about">
+                <h1>Pro Nail</h1>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                     740D Town Center Dr, Waynesboro, VA 22980
+                </p>
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +1 (540)-941-0069
+                </p>
+                <div class="social">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+            <div class="column link">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="column subscribe">
+                <h3>Newsletter</h3>
+                <div>
+                    <input type="email" placeholder="Your email id here" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row copyright">
+            <div class="footer-menu">
+
+                <a href="">Home</a>
+                <a href="">F.A.Q</a>
+                <a href="">Cookies Policy</a>
+                <a href="">Terms Of Service</a>
+                <a href="">Support</a>
+
+            </div>
+            <p>Copyright &copy; 2022</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>

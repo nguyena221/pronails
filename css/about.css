@@ -42,19 +42,19 @@ p {font-size: 1.2vw; }
     padding: 10px;
 }
 
-.container:nth-of-type(2) .responsive-img {max-width: 30%;}
+.container:nth-of-type(1) .responsive-img {max-width: 30%;}
+
+.container:nth-of-type(2) .responsive-img {max-width: 20%;}
 
 .container:nth-of-type(3) .responsive-img {max-width: 20%;}
 
-.container:nth-of-type(4) .responsive-img {max-width: 20%;}
+.container:nth-of-type(4) .responsive-img {max-width: 30%;}
 
-.container:nth-of-type(5) .responsive-img {max-width: 30%;}
+.container:nth-of-type(5) .responsive-img {max-width: 25%;}
 
 .container:nth-of-type(6) .responsive-img {max-width: 25%;}
 
 .container:nth-of-type(7) .responsive-img {max-width: 25%;}
-
-.container:nth-of-type(8) .responsive-img {max-width: 25%;}
 
 .container:nth-last-of-type(3), .container:nth-last-of-type(4) {
     padding-top: 0; 
