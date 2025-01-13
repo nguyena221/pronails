@@ -91,26 +91,54 @@ iframe{
     height: 9.5em;
 }
 
-@media (max-width: 1300px) {
-    .container {
-        flex-direction: column; /* Switch to column layout */
-        padding: 4em; /* Adjust padding for smaller screens */
+@media (max-width: 1350px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Switch to a single-column layout */
+        grid-template-rows: 4; /* Let rows adjust automatically */
+        padding: 2em 1em; /* Adjust padding for smaller screens */
+        row-gap: 2em; /* Add more space between rows */
+
     }
 
-    .responsive-img, 
-    .info {
-        width: 100%; /* Take full width */
-        margin: 0 auto; /* Center items */
-        max-width: 100%; /* Prevent oversized content */
-    }
-    .responsive-img{
-        width: 60%;
-        margin-top: 3em;
+    .grid-item {
+        text-align: center; /* Center-align text for better readability */
+        font-size: 1em; /* Adjust font size for smaller screens */
     }
 
-    .map-embeded-info, 
+    .item2 img, 
+    .item4 img {
+        width: 100%; /* Ensure images and iframes don't overflow */
+        height: auto; /* Maintain aspect ratio */
+
+    }
+    
+    .item3 iframe {
+        width: 100%; /* Make iframe fully responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .item4 {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center-align text */
+    }
+
+    .item4 img {
+        max-width: 80%; /* Adjust size for smaller screens */
+        margin-bottom: 1em; /* Add spacing between image and text */
+    }
+
+    .item4 p {
+        font-size: 0.9em; /* Slightly increase font size for readability */
+    }
+
+    .friendly-thing {
+        font-style: italic;
+        font-size: 1em; /* Adjust font size for readability */
+    }
+
     iframe {
-        width: 100%; /* Make the iframe responsive */
+        width: 100%; /* Full width for iframes */
         height: auto; /* Maintain aspect ratio */
     }
 }
