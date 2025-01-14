@@ -4,6 +4,8 @@
     transition: background-image 1s ease; 
 }
 
+.mainpg_title {font-size: clamp(70px, 20vw, 150px); }
+
 .container {
     display: flex;
     align-items: center;

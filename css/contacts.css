@@ -14,13 +14,13 @@
     column-gap: 2.5em; /* Space between grid items */
     row-gap: 1em;
     max-width: 100%;
-    padding: 2.5em 7em;
+    padding: 2.5vw 7vw;
 
 }
 
 .grid-item {
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1.8vw;
 
 }
 
@@ -86,59 +86,52 @@
     font-style: italic;
 }
 
-iframe{
-    width: 24em;
-    height: 9.5em;
-}
-
-@media (max-width: 1350px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Switch to a single-column layout */
-        grid-template-rows: 4; /* Let rows adjust automatically */
-        padding: 2em 1em; /* Adjust padding for smaller screens */
-        row-gap: 2em; /* Add more space between rows */
-
-    }
-
-    .grid-item {
-        text-align: center; /* Center-align text for better readability */
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-
-    .item2 img, 
-    .item4 img {
-        width: 100%; /* Ensure images and iframes don't overflow */
-        height: auto; /* Maintain aspect ratio */
-
-    }
+@media screen and (max-width: 1200px) {
     
-    .item3 iframe {
-        width: 100%; /* Make iframe fully responsive */
-        height: auto; /* Maintain aspect ratio */
+
+    /* Change the grid layout to a single column */
+    .grid-container {
+        grid-template-columns: 1fr; /* One column for all items */
+        grid-template-rows: auto; /* Adjust rows to fit content */
+        gap: 0;
     }
 
-    .item4 {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center-align items */
-        text-align: center; /* Center-align text */
-    }
-
-    .item4 img {
-        max-width: 80%; /* Adjust size for smaller screens */
-        margin-bottom: 1em; /* Add spacing between image and text */
-    }
-
-    .item4 p {
-        font-size: 0.9em; /* Slightly increase font size for readability */
-    }
-
-    .friendly-thing {
-        font-style: italic;
+    /* Adjust grid items to be stacked under each other */
+    .grid-item {
         font-size: 1em; /* Adjust font size for readability */
+        margin-bottom: 1em; /* Space between items */
     }
 
-    iframe {
-        width: 100%; /* Full width for iframes */
+    .item1 {
+        text-align: center;
+    }
+
+    /* Make the image smaller */
+    .item2 img {
+        max-width: 100%; /* Set a max-width to make the image smaller */
         height: auto; /* Maintain aspect ratio */
+    }
+
+    .item3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px; /* Add padding around the iframe container */
+        box-sizing: border-box; /* Ensure padding is included in the element's size */
+        border: 3px solid #bd8e89; /* Add border around iframe container */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+
+    .item3 iframe {
+        width: 100%; /* Make iframe responsive */
+        height: 300px; /* Set a smaller height for the iframe */
+        border: none; /* Remove the border from the iframe itself */ /* Add padding inside iframe */
+        box-sizing: border-box; /* Ensure padding is included in the iframe size */
+    }
+
+    /* Adjust the social media images */
+    .item4 img {
+        max-width: 60%; /* Make the social media images smaller */
     }
 }

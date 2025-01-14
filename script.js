@@ -54,3 +54,19 @@ if (window.location.pathname.endsWith('index.html')) {
     changeBackground();
     
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('footer.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load footer');
+            }
+            return response.text();
+        })
+        .then(footerHTML => {
+            document.body.insertAdjacentHTML('beforeend', footerHTML);
+        })
+        .catch(error => {
+            console.error('Error loading footer:', error);
+        });
+});

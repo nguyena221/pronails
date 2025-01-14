@@ -55,6 +55,7 @@ li:not(:first-child) {
 ul li a {       /* controls the color of the quick links */
     color: white;
     text-decoration: none;
+    font-weight: 400;
 }
 
 ul li a:hover, .social i:hover {

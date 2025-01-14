@@ -32,7 +32,7 @@ p {font-size: 18px;}
     margin: auto;
     top: -20px; 
     padding-left: 40px;
-    font-size: clamp(70px, 20vw, 150px);
+    font-size: 10vw;
     z-index: 50;
     color: white; 
 }
