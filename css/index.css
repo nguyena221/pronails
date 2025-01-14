@@ -1,7 +1,7 @@
 .front {
     height: 100vh;
-    background-image: url('../images/front_view_shop.jpg');
-    transition: background-image 1s ease; 
+    background-image: url('../images/header-background/front_view_shop.jpg');
+    transition: background-image 2s ease; 
 }
 
 .mainpg_title {font-size: clamp(70px, 20vw, 150px); }

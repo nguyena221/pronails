@@ -2,21 +2,21 @@ if (window.location.pathname.endsWith('index.html')) {
 
     // Array of image URLs for the background
     const images = [
-        'images/side_view_shop.jpg',
-        'images/soaps.jpg',
-        'images/nails/bear_xmas_nails.jpg',
-        'images/nails/uv_light.jpg',
-        'images/nails/blue_french.jpg',
-        'images/nails/gingerbread_nails.jpg',
-        'images/nails/green_flake_nails.jpg',
-        'images/nails/pink_nails.jpg',
-        'images/nails/grad_christmas.jpeg',
-        'images/nail_polish.jpg',
-        'images/nails/neongreen_xmas.jpg',
-        'images/nails/peppermint_nails.jpg',
-        'images/nails/pink_xmas_nails.jpg',
-        'images/nails/red_chrome_nails.jpg',
-        'images/nails/red_xmas_nails.jpg'
+        '../images/header-background/index-slideshow/side_view_shop.jpg',
+        '../images/header-background/index-slideshow/soaps.jpg',
+        '../images/header-background/index-slideshow/bear_xmas_nails.jpg',
+        '../images/header-background/index-slideshow/uv_light.jpg',
+        '../images/header-background/index-slideshow/christmas_nail(2).jpg',
+        '../images/header-background/index-slideshow/blue_french.jpg',
+        '../images/header-background/index-slideshow/gingerbread_nails.jpg',
+        '../images/header-background/index-slideshow/green_flake_nails.jpg',
+        '../images/header-background/index-slideshow/pink_nails.jpg',
+        '../images/header-background/index-slideshow/grad_christmas.jpeg',
+        '../images/header-background/index-slideshow/neongreen_xmas.jpg',
+        '../images/header-background/index-slideshow/peppermint_nails.jpg',
+        '../images/header-background/index-slideshow/pink_xmas_nails.jpg',
+        '../images/header-background/index-slideshow/red_chrome_nails.jpg',
+        '../images/header-background/index-slideshow/red_xmas_nails.jpg'
     ];
 
     let currentIndex = 0; // Index to track the current image
