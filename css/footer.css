@@ -1,5 +1,5 @@
 footer {
-    background-color: black;
+    background-color: #24314c;
     color: white;
     bottom: 0;
     width: 100vw;
@@ -13,12 +13,12 @@ footer * {
 }
 
 .row {
-    padding: 1em 1em;
+    padding: 2em 2em;
 }
 
 .row.primary {
     display: grid;
-    grid-template-columns: 3fr 2fr 4fr;
+    grid-template-columns: 4fr 2fr 2fr;
     align-items: stretch;
 }
 
@@ -27,18 +27,18 @@ footer * {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
-    min-height: 15em;
+    margin-bottom: 1em; 
 }
 
-h1 {
+.about h1 {
     width: 100%;
     text-align: left;
-    color: white;
     font-size: 4em;
     margin: 15px 0;
     white-space: nowrap;
 }
 
+/*formats the quick links */
 ul {
     list-style: none;
     display: flex;
@@ -47,38 +47,24 @@ ul {
     margin: 0;
 }
 
+/* controls spacing between the quick links */
 li:not(:first-child) {
     margin-top: 0.8em;
 }
 
-ul li a {
-    color: #a7a7a7;
+ul li a {       /* controls the color of the quick links */
+    color: white;
     text-decoration: none;
 }
 
-ul li a:hover {
-    color: #c7940a;
+ul li a:hover, .social i:hover {
+    color: #bd8e89;
 }
 
 .about p {
-    /* text-align: justify; */
     font-weight: 400; 
     line-height: 2;
     margin: 0;
-}
-
-input,
-button {
-    font-size: 1em;
-    padding: 1em;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-button {
-    background-color: #c7940a;
-    color: #ffffff;
 }
 
 div.social {
@@ -90,34 +76,12 @@ div.social {
 }
 
 .social i {
-    color: #bac6d9;
+    color: white;
 }
-
-i.material-icons {
-    font-size: 10px;
-    color: #3b5998;
-}
-
 
 .copyright {
     padding: 0.3em 1em;
     background-color: #25262e;
-}
-
-.footer-menu {
-    float: left;
-    margin-top: 10px;
-}
-
-.footer-menu a {
-    color: #cfd2d6;
-    padding: 6px;
-    text-decoration: none;
-}
-
-.footer-menu a:hover,
-.social i:hover {
-    color: #c7940a;
 }
 
 .copyright p {
