@@ -40,7 +40,7 @@
 }
 
 .item2 img{
-    border: 3px solid #bd8e89; 
+    border: 2px solid #bd8e89; 
     padding: 10px;
     align-self: center;
     max-width: 100%;
@@ -53,7 +53,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: 3px solid #bd8e89; 
+    border: 2px solid #bd8e89; 
     height: 7em;
 }
 .item3 iframe{
