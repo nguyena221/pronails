@@ -40,6 +40,13 @@
     cursor: pointer; 
     transition: background-color 0.3s ease;
 }
+.container .button:hover{
+    transform: scale(1.02) translateY(-0.1px);
+}
+.container .button:active{
+    transform: scale(0.995);
+}
+
 
 .container .button:hover {background-color: #090d15;}
 
