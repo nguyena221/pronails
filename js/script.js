@@ -1,6 +1,52 @@
-if (window.location.pathname.endsWith('index.html')) {
+document.addEventListener("DOMContentLoaded", () => {
+    // Load footer
+    fetch('../html/footer.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to load footer');
+            }
+            return response.text();
+        })
+        .then(footerHTML => {
+            document.body.insertAdjacentHTML('beforeend', footerHTML);
+        })
+        .catch(error => {
+            console.error('Error loading footer:', error);
+        });
 
-    // Array of image URLs for the background
+    // Load header
+    const headerPlaceholder = document.getElementById("header-placeholder");
+    fetch("../html/header.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load header HTML");
+            }
+            return response.text();
+        })
+        .then(data => {
+            headerPlaceholder.innerHTML = data;
+
+            // Update main page title dynamically
+            const pageTitles = {
+                "index.html": "Pro Nails",
+                "about.html": "About",
+                "menu.html": "Menu",
+                "contacts.html": "Contacts",
+                // Add more pages as needed
+            };
+
+            const path = window.location.pathname;
+            const fileName = path.substring(path.lastIndexOf("/") + 1) || "index.html";
+            const mainpgTitle = document.querySelector(".mainpg_title");
+            if (mainpgTitle && pageTitles[fileName]) {
+                mainpgTitle.textContent = pageTitles[fileName];
+            }
+        })
+        .catch(error => {
+            console.error("Error loading header:", error);
+        });
+
+    // Background slideshow
     const images = [
         '../images/header-background/index-slideshow/side_view_shop.jpg',
         '../images/header-background/index-slideshow/soaps.jpg',
@@ -19,54 +65,24 @@ if (window.location.pathname.endsWith('index.html')) {
         '../images/header-background/index-slideshow/red_xmas_nails.jpg'
     ];
 
-    let currentIndex = 0; // Index to track the current image
+    let currentIndex = 0;
 
-    // Function to change background image of the front div
     function changeBackground() {
         const frontDiv = document.querySelector('.front');
-        frontDiv.style.backgroundImage = `url(${images[currentIndex]})`;
+        if (frontDiv) {
+            frontDiv.style.backgroundImage = `url(${images[currentIndex]})`;
+        }
     }
 
-    // Function to handle slide change with arrows
-    function changeSlide(direction) {
-        currentIndex += direction;
-
-        // Loop through images array (wrap around if out of bounds)
-        if (currentIndex < 0) {
-            currentIndex = images.length - 1;
-        } else if (currentIndex >= images.length) {
-            currentIndex = 0;
-        }
-
-        changeBackground(); // Update the background image
-    }
-
-    // Automatically change the background image every 5 seconds
-    setInterval(() => {
-        currentIndex++;
-        if (currentIndex >= images.length) {
-            currentIndex = 0; // Reset to the first image if the last image is reached
-        }
+    function startSlideshow() {
         changeBackground();
-    }, 5000); // Change every 5 seconds
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            changeBackground();
+        }, 5000);
+    }
 
-    // Initial background setup
-    changeBackground();
-    
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('footer.html')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Failed to load footer');
-            }
-            return response.text();
-        })
-        .then(footerHTML => {
-            document.body.insertAdjacentHTML('beforeend', footerHTML);
-        })
-        .catch(error => {
-            console.error('Error loading footer:', error);
-        });
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/') {
+        startSlideshow();
+    }
 });
