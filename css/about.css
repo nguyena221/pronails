@@ -47,7 +47,7 @@ p {font-size: 1.2vw; }
 
 .container:nth-of-type(6) .responsive-img {max-width: 25%;}
 
-.container:nth-of-type(7) .responsive-img {max-width: 25%;}
+.container:nth-of-type(8) .responsive-img {max-width: 25%;}
 
 .container:nth-last-of-type(3), .container:nth-last-of-type(4) {
     padding-top: 0; 
@@ -97,7 +97,11 @@ p {font-size: 1.2vw; }
 
     .container:nth-of-type(5) .responsive-img {max-width: 60%;}
 
+    .container:nth-of-type(6) .responsive-img {max-width: 60%;}
+
     .container:nth-of-type(7) .responsive-img {max-width: 60%;}
+
+    .container:nth-of-type(8) .responsive-img {max-width: 60%;}
 
     p {font-size: 18px; }
 

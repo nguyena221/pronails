@@ -90,7 +90,7 @@ div.social {
     text-align: right;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 450px) {
     .row.primary {
         grid-template-columns: 1fr;
     }
