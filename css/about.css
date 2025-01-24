@@ -158,4 +158,8 @@ p {
     .quote {
         font-size: 7vw;
     }
+
+    .quote_b {
+        margin-top:0;
+    }
 }
