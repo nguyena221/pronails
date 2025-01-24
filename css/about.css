@@ -138,7 +138,7 @@ p {
 
     .container:nth-of-type(5) .responsive-img {
         max-width: 10em;
-        opacity: 0;
+        display: none;
     }
 
     .container:nth-of-type(6) .responsive-img {
