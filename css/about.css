@@ -112,6 +112,7 @@ p {
     .container {
         flex-direction: column;
         gap: 2em;
+        padding: 10px;
     }
 
     .responsive-img {
