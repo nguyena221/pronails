@@ -120,35 +120,35 @@ p {
     }
 
     .container:nth-of-type(1) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(2) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(3) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(4) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(5) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(6) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(7) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     .container:nth-of-type(8) .responsive-img {
-        max-width: 60%;
+        max-width: 100%;
     }
 
     p {
