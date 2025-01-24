@@ -113,7 +113,6 @@ p {
         text-align: center;
         flex-direction: column;
         gap: 2em;
-        border-bottom: none; 
     }
 
     .responsive-img {
@@ -131,11 +130,11 @@ p {
 
     .container:nth-of-type(3) .responsive-img {
         max-width: 10em;
-        height: 9em;
     }
 
     .container:nth-of-type(4) .responsive-img {
         max-width: 10em;
+        height: 9em;
     }
 
     .container:nth-of-type(5) .responsive-img {
