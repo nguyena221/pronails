@@ -110,6 +110,7 @@ p {
 
 @media (max-width: 1000px) {
     .container {
+        text-align: center;
         flex-direction: column;
         gap: 2em;
     }
