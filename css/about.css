@@ -29,10 +29,15 @@ p {font-size: 1.2vw; }
 }
 
 .responsive-img { 
-    max-height: 100%;
-    align-self: center;
-    border: 2px solid #bd8e89;
-    padding: 10px;
+    .responsive-img {
+        max-width: 100%; 
+        height: auto; 
+        object-fit: cover;
+        align-self: center;
+        border: 2px solid #bd8e89;
+        padding: 10px;
+    }
+    
 }
 
 .container:nth-of-type(1) .responsive-img {max-width: 30%;}
@@ -87,6 +92,12 @@ p {font-size: 1.2vw; }
         flex-direction: column; 
         gap: 2em; 
     }
+    .responsive-img {
+        max-width: 60%; 
+        height: auto; 
+        object-fit: cover; 
+    }
+
     .container:nth-of-type(1) .responsive-img {max-width: 60%;}
 
     .container:nth-of-type(2) .responsive-img {max-width: 60%;}
