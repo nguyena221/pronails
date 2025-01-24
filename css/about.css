@@ -115,7 +115,7 @@ p {
     }
 
     .responsive-img {
-        height: 2em;
+        height: 5em;
         object-fit: cover;
     }
 
